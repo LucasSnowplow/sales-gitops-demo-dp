@@ -12,3 +12,8 @@ data:
           name: Login success
           event:
             source: iglu:com.snplow.sales.gcp.git/gitops_login/jsonschema/1-0-1
+        - resourceName: 44420fab-88be-4c4c-b808-ec46dd2c9ac2
+          name: Scroll event
+          event:
+            source: iglu:com.snplow.sales.gcp/scroll_depth_event/jsonschema/1-0-1
+        

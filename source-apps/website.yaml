@@ -1,0 +1,7 @@
+apiVersion: v1
+resourceType: source-application
+resourceName: b8261a25-ee81-4c6a-a94c-7717ba835035
+data:
+    name: website
+    appIds: ["website", "website-stage", "website-ua"]
+    owner: lucas@snowplowanalytics.com

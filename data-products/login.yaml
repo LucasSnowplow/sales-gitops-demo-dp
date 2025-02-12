@@ -5,7 +5,7 @@ data:
     name: Login
     owner: lucas@snowplowanalytics.com
     description: Login page
-    sourceApplications: ['GitOps_Test']
+    sourceApplications: [GitOps_Test]
     eventSpecifications:
         - resourceName: cfb3a227-0482-4ea9-8b0d-f5a569e5d103
           name: Login success

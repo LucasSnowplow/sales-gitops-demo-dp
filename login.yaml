@@ -1,0 +1,14 @@
+apiVersion: v1
+resourceType: data-product
+resourceName: 0edb4b95-3308-40c4-b266-eae2910d5d2a
+data:
+    name: Login
+    owner: lucas@snowplowanalytics.com
+    description: Login page
+    sourceApplications:
+        - $ref: ./source-apps/website.yaml
+    eventSpecifications:
+        - resourceName: cfb3a227-0482-4ea9-8b0d-f5a569e5d103
+          name: Login success
+          event:
+            source: iglu:com.snplow.sales.gcp.git/gitops_login/jsonschema/1-0-1

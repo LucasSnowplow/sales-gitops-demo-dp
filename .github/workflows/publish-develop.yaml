@@ -1,9 +1,9 @@
 on:
-  pull_request:
-    branches: [develop, main]
+  push:
+    branches: [develop]
 
 jobs:
-  validate:
+  publish:
     runs-on: ubuntu-latest
     env:
       SNOWPLOW_CONSOLE_ORG_ID: ${{ secrets.SNOWPLOW_CONSOLE_ORG_ID }}
@@ -15,6 +15,6 @@ jobs:
 
       - uses: snowplow-product/setup-snowplow-cli@v1
 
-      - run: snowplow-cli ds validate --gh-annotate
+      - run: snowplow-cli ds publish dev --managed-from $GITHUB_REPOSITORY
 
-      - run: snowplow-cli dp publish --dry-run --gh-annotate
+      - run: snowplow-cli dp publish

@@ -5,3 +5,6 @@ data:
     name: website
     appIds: ["website", "website-stage", "website-ua"]
     owner: lucas@snowplowanalytics.com
+    entities:
+        tracked: []
+        enriched: []
